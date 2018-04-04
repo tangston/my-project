@@ -43,3 +43,5 @@ hs_err_pid*
 *.resources
 
 
+*.json
+*.prx
