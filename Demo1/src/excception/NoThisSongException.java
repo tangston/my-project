@@ -1,9 +1,10 @@
-package excception;
+﻿package excception;
 /**
+ *	text using UTF-8
  * 制作我的抛出异常和声明异常
  * @author tangstone 1605040209
  * 完成日期 2018/4/4 19：20
- *	text using UTF-8
+ *	
  */
 public class NoThisSongException extends Exception {
 

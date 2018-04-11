@@ -2,14 +2,12 @@ package tankWar;
 import java.awt.*;
 import javax.swing.*;
 
-public class TankGame extends JFrame{
+public class TankGame extends JFrame
+{
 	MyPanel mp=null;
-	public static void main(String[] args){
+	public static void main(String[] args)
+	{
 		TankGame demo=new TankGame();
-		Dog gt=new Dog();
-		gt.start();
-		// TODO 自动生成的方法存根
-
 	}
 	public TankGame(){
 		mp=new MyPanel();
@@ -52,7 +50,8 @@ class MyPanel extends JPanel{
 		
 	}
 }
-class Tank{
+class Tank
+{
 	//tank's   coordinate
 	int x=0,y=0;
 
@@ -74,49 +73,11 @@ class Tank{
 	
 	
 }
-class Hero extends Tank{
-	public Hero(int x,int y){
+class Hero extends Tank
+{
+	public Hero(int x,int y)
+	{
 		this.setX(x);
 		this.setY(y);
 	}	
-}
-class Cat implements Runnable
-{
-
-	public void run()
-	{
-		while(true)
-		{
-			System.out.println("miao miao");
-			try {
-					this.sleep(1000);
-				} catch (InterruptedException e)
-				{
-					// TODO 自动生成的 catch 块
-					e.printStackTrace();
-				}
-		}
-		
-}
-
-class Dog extends Thread
-{
-
-	public void run()
-	{
-		while(true)
-		{
-			System.out.println("miao miao");
-			try 
-			{
-				this.sleep(1000);
-			} 
-			catch (InterruptedException e) 
-			{
-				// TODO 自动生成的 catch 块
-				e.printStackTrace();
-			}
-		}
-	
-	}
 }

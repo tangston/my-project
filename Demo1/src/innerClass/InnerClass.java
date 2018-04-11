@@ -1,9 +1,9 @@
 package innerClass;
 /**
- * 
+ * using UTF-8
  * @author ts 1605040209
  * finish time :2018 4/4 16:20 
- *	prove the 
+ *	prove the Inner Class can have the free access to the outside
  */
 public class InnerClass {
 

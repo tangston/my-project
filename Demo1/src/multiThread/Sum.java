@@ -1,12 +1,18 @@
 package multiThread;
-
+/**
+ *	text using UTF-8
+ * new 一个对象并产生多个线程计算高斯求和1到100
+ * @author tangstone 1605040209
+ * 完成日期 2018/4/4 17：10
+ *	
+ */
 public class Sum implements Runnable
 {
 	
 	public static void main(String[] args)
 	{
 		Sum ts=new Sum();
-		// TODO �Զ����ɵķ������
+		
 		Cat cat=new Cat(0);
 		
 		for(int i=0;i<10;++i)
@@ -26,7 +32,7 @@ public class Sum implements Runnable
 	
 }
 
-class Cat implements Runnable //����ʹ�õ���
+class Cat implements Runnable 
 {
 	public  static int sum=0;
 	public  static int processFinish=0;
