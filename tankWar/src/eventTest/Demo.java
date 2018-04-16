@@ -38,11 +38,15 @@ class MyPanel extends JPanel implements KeyListener{
 	@Override
 	public void keyPressed(KeyEvent e) {
 		// TODO 自动生成的方法存根
-		if(e.getKeyCode()==KeyEvent.VK_DOWN)
-		{
+		if(e.getKeyCode()==KeyEvent.VK_DOWN){
 			y++;
-			System.out.println("down pressed");
-		}
+		}else if(e.getKeyCode()==KeyEvent.VK_UP){
+			y--;			
+		}else if(e.getKeyCode()==KeyEvent.VK_LEFT){
+			x--;
+		}else if(e.getKeyCode()==KeyEvent.VK_RIGHT){
+			x++;
+		}else ;
 		repaint();
 	}
 	@Override
